@@ -341,9 +341,9 @@ def main():
     eth = load_eth(a.data, a.eth_new, log)
     btc = load_btc(a.data)
     # persist merged inputs for next run
-    eth_out = pd.DataFrame({'ts': (eth.index.asi8 // 10 ** 6), 'open': eth.open, 'high': eth.high, 'low': eth.low, 'close': eth.close, 'vol': eth.volume, 'confirm': 1})
+    eth_out = pd.DataFrame({'ts': ((eth.index - pd.Timestamp(0, tz='UTC')) // pd.Timedelta(milliseconds=1)).astype('int64'), 'open': eth.open, 'high': eth.high, 'low': eth.low, 'close': eth.close, 'vol': eth.volume, 'confirm': 1})
     eth_out.to_csv(os.path.join(a.out, 'okx_eth_4h.csv'), index=False)
-    fo = fund.copy(); fo['fundingTime'] = fo.t.astype('int64') // 10 ** 6
+    fo = fund.copy(); fo['fundingTime'] = ((fo.t - pd.Timestamp(0, tz='UTC')) // pd.Timedelta(milliseconds=1)).astype('int64')
     fo[['symbol', 'fundingTime', 'fundingRate']].to_csv(os.path.join(a.out, 'funding.csv'), index=False)
 
     coins = {'BTC': prep(btc, fund[fund.symbol == 'BTCUSDT']), 'ETH': prep(eth, fund[fund.symbol == 'ETHUSDT'])}
