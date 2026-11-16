@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: install
-        run: pip install -q pandas numpy scipy arch lightgbm
+        run: pip install -q pandas numpy scipy scikit-learn arch lightgbm
       - uses: actions/cache@v4
         with:
           path: data/hist.csv.gz
