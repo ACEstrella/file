@@ -1,0 +1,8 @@
+data/hist.csv.gz
+data/latest.csv
+data/daily.csv
+data/dash/
+data/result.json
+data/new/
+work/
+__pycache__/

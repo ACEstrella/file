@@ -1,0 +1,574 @@
+{
+"candidates": [
+{
+"rule": "ema",
+"n": 50,
+"k": 2.0,
+"dir": "both",
+"id": "ema_af3b0f"
+},
+{
+"rule": "ema",
+"n": 100,
+"k": 2.0,
+"dir": "both",
+"id": "ema_d04d6e"
+},
+{
+"rule": "ema",
+"n": 200,
+"k": 2.0,
+"dir": "both",
+"id": "ema_0a6f3f"
+},
+{
+"rule": "ema",
+"n": 400,
+"k": 2.0,
+"dir": "both",
+"id": "ema_8d1790"
+},
+{
+"rule": "tsmom",
+"L": 18,
+"k": 2.0,
+"dir": "both",
+"id": "tsmom_66f784"
+},
+{
+"rule": "tsmom",
+"L": 42,
+"k": 2.0,
+"dir": "both",
+"id": "tsmom_bb42cc"
+},
+{
+"rule": "tsmom",
+"L": 90,
+"k": 2.0,
+"dir": "both",
+"id": "tsmom_d78404"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 2.0,
+"dir": "both",
+"id": "tsmom_328178"
+},
+{
+"rule": "donch",
+"N": 30,
+"k": 2.0,
+"dir": "both",
+"id": "donch_095699"
+},
+{
+"rule": "donch",
+"N": 60,
+"k": 2.0,
+"dir": "both",
+"id": "donch_e5ef87"
+},
+{
+"rule": "donch",
+"N": 120,
+"k": 2.0,
+"dir": "both",
+"id": "donch_3fc6a0"
+},
+{
+"rule": "rsi_mr",
+"lo": 25,
+"hi": 75,
+"k": 2.0,
+"dir": "both",
+"filters": {
+"regime": 1200
+},
+"id": "rsi_mr_98212f"
+},
+{
+"rule": "rsi_mr",
+"lo": 30,
+"hi": 70,
+"k": 2.0,
+"dir": "both",
+"filters": {
+"regime": 1200
+},
+"id": "rsi_mr_25c1bc"
+},
+{
+"rule": "ema",
+"n": 50,
+"k": 2.0,
+"dir": "long",
+"id": "ema_155992"
+},
+{
+"rule": "ema",
+"n": 100,
+"k": 2.0,
+"dir": "long",
+"id": "ema_85f3b2"
+},
+{
+"rule": "ema",
+"n": 200,
+"k": 2.0,
+"dir": "long",
+"id": "ema_f44a57"
+},
+{
+"rule": "ema",
+"n": 400,
+"k": 2.0,
+"dir": "long",
+"id": "ema_769b24"
+},
+{
+"rule": "tsmom",
+"L": 18,
+"k": 2.0,
+"dir": "long",
+"id": "tsmom_9b7bb6"
+},
+{
+"rule": "tsmom",
+"L": 42,
+"k": 2.0,
+"dir": "long",
+"id": "tsmom_9cc77c"
+},
+{
+"rule": "tsmom",
+"L": 90,
+"k": 2.0,
+"dir": "long",
+"id": "tsmom_5f60a8"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 2.0,
+"dir": "long",
+"id": "tsmom_291dbb"
+},
+{
+"rule": "donch",
+"N": 30,
+"k": 2.0,
+"dir": "long",
+"id": "donch_a9bac0"
+},
+{
+"rule": "donch",
+"N": 60,
+"k": 2.0,
+"dir": "long",
+"id": "donch_62ee90"
+},
+{
+"rule": "donch",
+"N": 120,
+"k": 2.0,
+"dir": "long",
+"id": "donch_67beb5"
+},
+{
+"rule": "rsi_mr",
+"lo": 25,
+"hi": 75,
+"k": 2.0,
+"dir": "long",
+"filters": {
+"regime": 1200
+},
+"id": "rsi_mr_a4688d"
+},
+{
+"rule": "rsi_mr",
+"lo": 30,
+"hi": 70,
+"k": 2.0,
+"dir": "long",
+"filters": {
+"regime": 1200
+},
+"id": "rsi_mr_1bb344"
+},
+{
+"rule": "ema",
+"n": 50,
+"k": 3.5,
+"dir": "both",
+"id": "ema_41daa0"
+},
+{
+"rule": "ema",
+"n": 100,
+"k": 3.5,
+"dir": "both",
+"id": "ema_56313f"
+},
+{
+"rule": "ema",
+"n": 200,
+"k": 3.5,
+"dir": "both",
+"id": "ema_c1438a"
+},
+{
+"rule": "ema",
+"n": 400,
+"k": 3.5,
+"dir": "both",
+"id": "ema_8f4197"
+},
+{
+"rule": "tsmom",
+"L": 18,
+"k": 3.5,
+"dir": "both",
+"id": "tsmom_401202"
+},
+{
+"rule": "tsmom",
+"L": 42,
+"k": 3.5,
+"dir": "both",
+"id": "tsmom_c4b222"
+},
+{
+"rule": "tsmom",
+"L": 90,
+"k": 3.5,
+"dir": "both",
+"id": "tsmom_2f5623"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 3.5,
+"dir": "both",
+"id": "tsmom_b9defe"
+},
+{
+"rule": "donch",
+"N": 30,
+"k": 3.5,
+"dir": "both",
+"id": "donch_912d18"
+},
+{
+"rule": "donch",
+"N": 60,
+"k": 3.5,
+"dir": "both",
+"id": "donch_7a559b"
+},
+{
+"rule": "donch",
+"N": 120,
+"k": 3.5,
+"dir": "both",
+"id": "donch_cedb6b"
+},
+{
+"rule": "rsi_mr",
+"lo": 25,
+"hi": 75,
+"k": 3.5,
+"dir": "both",
+"filters": {
+"regime": 1200
+},
+"id": "rsi_mr_56eec2"
+},
+{
+"rule": "rsi_mr",
+"lo": 30,
+"hi": 70,
+"k": 3.5,
+"dir": "both",
+"filters": {
+"regime": 1200
+},
+"id": "rsi_mr_61230c"
+},
+{
+"rule": "ema",
+"n": 50,
+"k": 3.5,
+"dir": "long",
+"id": "ema_a37d90"
+},
+{
+"rule": "ema",
+"n": 100,
+"k": 3.5,
+"dir": "long",
+"id": "ema_93d6f3"
+},
+{
+"rule": "ema",
+"n": 200,
+"k": 3.5,
+"dir": "long",
+"id": "ema_f0b4b5"
+},
+{
+"rule": "ema",
+"n": 400,
+"k": 3.5,
+"dir": "long",
+"id": "ema_f9a095"
+},
+{
+"rule": "tsmom",
+"L": 18,
+"k": 3.5,
+"dir": "long",
+"id": "tsmom_e16008"
+},
+{
+"rule": "tsmom",
+"L": 42,
+"k": 3.5,
+"dir": "long",
+"id": "tsmom_3e78b6"
+},
+{
+"rule": "tsmom",
+"L": 90,
+"k": 3.5,
+"dir": "long",
+"id": "tsmom_580aa9"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 3.5,
+"dir": "long",
+"id": "tsmom_154802"
+},
+{
+"rule": "donch",
+"N": 30,
+"k": 3.5,
+"dir": "long",
+"id": "donch_4a68f4"
+},
+{
+"rule": "donch",
+"N": 60,
+"k": 3.5,
+"dir": "long",
+"id": "donch_4b21f6"
+},
+{
+"rule": "donch",
+"N": 120,
+"k": 3.5,
+"dir": "long",
+"id": "donch_a9aad2"
+},
+{
+"rule": "rsi_mr",
+"lo": 25,
+"hi": 75,
+"k": 3.5,
+"dir": "long",
+"filters": {
+"regime": 1200
+},
+"id": "rsi_mr_cc6f60"
+},
+{
+"rule": "rsi_mr",
+"lo": 30,
+"hi": 70,
+"k": 3.5,
+"dir": "long",
+"filters": {
+"regime": 1200
+},
+"id": "rsi_mr_3b372d"
+},
+{
+"rule": "ema",
+"n": 100,
+"k": 3.5,
+"dir": "both",
+"filters": {
+"fund_max": 0.0003
+},
+"id": "ema_ccb3ed"
+},
+{
+"rule": "ema",
+"n": 100,
+"k": 3.5,
+"dir": "both",
+"filters": {
+"vol_q": 0.9
+},
+"id": "ema_bc8d69"
+},
+{
+"rule": "ema",
+"n": 200,
+"k": 3.5,
+"dir": "both",
+"filters": {
+"fund_max": 0.0003
+},
+"id": "ema_7935ae"
+},
+{
+"rule": "ema",
+"n": 200,
+"k": 3.5,
+"dir": "both",
+"filters": {
+"vol_q": 0.9
+},
+"id": "ema_5d99a1"
+},
+{
+"rule": "ema",
+"n": 100,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"id": "ema_ad5855"
+},
+{
+"rule": "ema",
+"n": 200,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"id": "ema_724a99"
+},
+{
+"rule": "tsmom",
+"L": 90,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"id": "tsmom_8cd6d1"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"id": "tsmom_42546b"
+},
+{
+"rule": "donch",
+"N": 120,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"id": "donch_072391"
+},
+{
+"rule": "ema",
+"n": 100,
+"k": 3.5,
+"dir": "long",
+"vt": 0.4,
+"id": "ema_6b43d7"
+},
+{
+"rule": "ema",
+"n": 200,
+"k": 3.5,
+"dir": "long",
+"vt": 0.4,
+"id": "ema_162b4e"
+},
+{
+"rule": "tsmom",
+"L": 90,
+"k": 3.5,
+"dir": "long",
+"vt": 0.4,
+"id": "tsmom_76b7d0"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 3.5,
+"dir": "long",
+"vt": 0.4,
+"id": "tsmom_d1456f"
+},
+{
+"rule": "donch",
+"N": 120,
+"k": 3.5,
+"dir": "long",
+"vt": 0.4,
+"id": "donch_60002b"
+},
+{
+"rule": "ml",
+"th": 0.55,
+"k": 3.0,
+"dir": "both",
+"id": "ml_e78858"
+},
+{
+"rule": "ml",
+"th": 0.55,
+"k": 3.0,
+"dir": "long",
+"id": "ml_a1be90"
+},
+{
+"rule": "ml",
+"th": 0.6,
+"k": 3.0,
+"dir": "both",
+"id": "ml_e8a863"
+},
+{
+"rule": "ml",
+"th": 0.6,
+"k": 3.0,
+"dir": "long",
+"id": "ml_33aba2"
+}
+],
+"champion": {
+"BTC": {},
+"ETH": {}
+},
+"ledger": [
+{
+"coin": "BTC",
+"decision_utc": "2026-11-16 00:00:00+00:00",
+"signal": "숏",
+"kind": "참고(검증 미통과)",
+"size": 1.0,
+"stop": 68677.3,
+"strategy_id": "tsmom_42546b"
+}
+],
+"log": [
+{
+"at": "2026-11-16 09:48 UTC",
+"mode": "improve",
+"text": "기본 후보 전략 70개 등록"
+}
+],
+"last_run": {
+"at": "2026-11-16 09:48 UTC",
+"mode": "improve"
+}
+}

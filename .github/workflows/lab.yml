@@ -1,0 +1,56 @@
+name: coin-signal-lab
+on:
+  push:
+    branches: [coin-signal-lab]
+    paths: ['tick.txt', 'candidates_add.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: lab
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: coin-signal-lab
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: install
+        run: pip install -q pandas numpy scipy arch lightgbm
+      - uses: actions/cache@v4
+        with:
+          path: data/hist.csv.gz
+          key: bitstamp-hist-v1
+      - name: collect ETH candles and funding
+        run: python collect.py
+      - name: BTC range forecast
+        run: |
+          python btc_forecast.py data
+          mkdir -p out/forecast && cp data/dash/*.json out/forecast/
+      - name: futures signals
+        run: |
+          MODE=daily
+          DOW=$(date -u +%u)
+          if [ -f candidates_add.json ] || [ "$DOW" = "2" ] || [ "$DOW" = "5" ]; then MODE=improve; fi
+          ARGS=""
+          [ -f data/new/eth.json ] && ARGS="$ARGS --eth-new data/new/eth.json"
+          F=""; for f in data/new/fund_btc.json data/new/fund_eth.json; do [ -f "$f" ] && F="$F $f"; done
+          [ -n "$F" ] && ARGS="$ARGS --fund-new $F"
+          [ -f candidates_add.json ] && ARGS="$ARGS --add-candidates candidates_add.json"
+          python signal_lab.py --data data --state data/state.json --out out/lab --mode $MODE $ARGS
+          mv out/lab/okx_eth_4h.csv data/okx_eth_4h.csv
+          mv out/lab/funding.csv data/funding.csv
+          rm -f candidates_add.json
+          echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) $MODE" > out/last_run.txt
+      - name: commit results
+        run: |
+          git config user.name "coin-signal-lab-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "lab run $(cat out/last_run.txt)" || echo "nothing to commit"
+          git push
