@@ -543,6 +543,82 @@
 "k": 3.0,
 "dir": "long",
 "id": "ml_33aba2"
+},
+{
+"rule": "tsmom",
+"L": 270,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"id": "tsmom_1ad704"
+},
+{
+"rule": "tsmom",
+"L": 270,
+"k": 3.5,
+"dir": "long",
+"vt": 0.4,
+"id": "tsmom_2f3d56"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"filters": {
+"regime": 1200
+},
+"id": "tsmom_2df784"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 5.0,
+"dir": "both",
+"vt": 0.4,
+"id": "tsmom_a396be"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 3.5,
+"dir": "long",
+"vt": 0.3,
+"id": "tsmom_00f01f"
+},
+{
+"rule": "donch",
+"N": 120,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"filters": {
+"regime": 400
+},
+"id": "donch_85cad5"
+},
+{
+"rule": "ema",
+"n": 200,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"filters": {
+"vol_q": 0.9
+},
+"id": "ema_ab3964"
+},
+{
+"rule": "tsmom",
+"L": 180,
+"k": 3.5,
+"dir": "both",
+"vt": 0.4,
+"filters": {
+"vol_q": 0.9
+},
+"id": "tsmom_d7329f"
 }
 ],
 "champion": {
@@ -557,7 +633,12 @@
 "kind": "참고(검증 미통과)",
 "size": 1.0,
 "stop": 68677.3,
-"strategy_id": "tsmom_42546b"
+"strategy_id": "tsmom_42546b",
+"closed": true,
+"entry": 65310.48,
+"exit": 64821.9,
+"stopped": false,
+"pnl_pct": 0.584
 }
 ],
 "log": [
@@ -575,10 +656,25 @@
 "at": "2026-11-16 23:12 UTC",
 "mode": "daily",
 "text": "ETH 4시간봉 3개 추가 (okx, 마지막 11-16 16:00 UTC)"
+},
+{
+"at": "2026-11-19 12:25 UTC",
+"mode": "improve",
+"text": "새 후보 전략 8개 추가 (총 78개)"
+},
+{
+"at": "2026-11-19 12:25 UTC",
+"mode": "improve",
+"text": "펀딩비 16건 추가"
+},
+{
+"at": "2026-11-19 12:25 UTC",
+"mode": "improve",
+"text": "ETH 4시간봉 16개 추가 (okx, 마지막 11-19 08:00 UTC)"
 }
 ],
 "last_run": {
-"at": "2026-11-16 23:12 UTC",
-"mode": "daily"
+"at": "2026-11-19 12:25 UTC",
+"mode": "improve"
 }
 }
